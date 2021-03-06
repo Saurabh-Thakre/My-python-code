@@ -1,0 +1,60 @@
+*****************Basic refresher before jsaurabh = "sa"
+        print(saurabh)umping ahead*********************
+
+* Python does not require you to use objects or class
+
+* sometimes program could become complex. So OOP helps you to group the data
+together along with behavior in single place.
+
+* promotes modularization of programs : one part of the could should
+not know or have access to the other part of the code/data. So down
+the road if from the whole code, only a part of the code needs to be
+replaced then it can be done with minimal disturbance to the code.
+
+* Method : fancy way to function that are the part of a class
+* Attributes : variables that hold the data that are part of class
+* Inheritance : Means by which a class can inherit capabilities from
+another class.
+* Composition : Means of building complex objects out of other objects
+
+******** Continue with class creation
+
+definition_start.py :
+
+class Book:  -- Class name without ()
+class Book(): You can use () after your class name but only requires
+when a class inherits things from other class
+
+-- __init__:  When the class is created, the __init__ function is called
+very first to initialize new objects with information.
+
+-- self : Whenever we call a Method on a python object, the object itself
+get automatically passed in as the first argument.
+
+-- self.title : Creating an Attribute on the object called title
+-----------------------
+instance_start.py
+
+How to create instance methods and attributes for the Class
+
+- instance attributes : it holds the value that is unique to each instance of the
+object that is declared on.
+
+# self is the object, and first parameter to the instance method
+instance method: every instance method takes an object as the first parameter.
+
+# ._discount : underscore on the attribute name, reason for this is to give other
+developer who use this class as a hint that this attribute is considered
+internal to the class and should not be accessed from outside class's logic.
+
+# if hasattr(self, "_discount") : hasattr fucntion will see if the _discount attributes
+is present or not ?
+
+# __attribute/__method : if you use double underscore(__) as the start of an
+attribute or method name then the python interpreter will change the name
+of that attribute/method so that other classes will get an error if they try
+to access it/
+--------------
+typecheck_start.py
+
+To check during runtime, what type or class a given object is ?
